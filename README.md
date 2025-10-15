@@ -1,3 +1,4 @@
+```markdown
 # wot-ts3-stats
 
 ## Описание проекта
@@ -15,6 +16,7 @@
 - 💬 Интеграция с TeamSpeak (обновление групп и описания)
 - 🗄️ Кэширование API запросов в MySQL
 - 📱 Адаптивный веб-интерфейс
+- 🔄 Автоматическое обновление expected values для расчета WN8 с modxvm
 
 **API endpoints:**
 - `GET /api.php` - статистика игрока по нику или account_id
@@ -42,6 +44,7 @@ Service for displaying and analyzing World of Tanks player statistics with WN8 r
 - 💬 TeamSpeak integration (group and description updates)
 - 🗄️ API request caching in MySQL
 - 📱 Responsive web interface
+- 🔄 Automatic expected values updates for WN8 calculation from modxvm
 
 **API endpoints:**
 - `GET /api.php` - player statistics by nickname or account_id
@@ -71,6 +74,7 @@ Service for displaying and analyzing World of Tanks player statistics with WN8 r
 - **compute_two_wn8_methods()** - основные методы расчета WN8
 - **get_player_clan_info()** - информация о клане игрока
 - **is_player_data_fresh()** - проверка актуальности данных
+- **update_expected_values()** - автоматическое обновление данных WN8 с modxvm
 
 ### 📁 **api.php**
 - REST API endpoint
@@ -141,6 +145,6 @@ CREATE TABLE user_wg (
 2. **WN8 расчет** - используется метод global_avg_expected
 3. **Безопасность** - все ключи через переменные окружения
 4. **Интеграция** - вебхуки для TeamSpeak бота
-5. **Актуальность** - автоматическое обновление expected values
+5. **Актуальность** - автоматическое обновление expected values с modxvm
 
 Этот проект идеально подходит для кланов World of Tanks, сообществ и серверов TeamSpeak, где требуется автоматическое отображение статистики игроков.
