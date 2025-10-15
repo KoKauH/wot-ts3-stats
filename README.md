@@ -1,4 +1,3 @@
-```markdown
 # wot-ts3-stats
 
 ## Описание проекта
